@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>URL Verifier</title>
+</head>
+<body>
+    <h1>URL Verifier</h1>
+    <form method="post">
+        <label for="url">Enter URL:</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Verify</button>
+    </form>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
